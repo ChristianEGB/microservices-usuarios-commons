@@ -1,4 +1,4 @@
-package com.formacionbdi.springboot.app.usuarios.commons.entities;
+package com.formacionbdi.springboot.app.commons.usuarios.entities;
 
 import java.io.Serializable;
 import java.util.List;
@@ -35,6 +35,16 @@ public class Usuario implements Serializable {
 
 	@Column(unique = true, length = 100)
 	private String email;
+	
+	private Integer intents;
+	
+	public Integer getIntents() {
+		return intents;
+	}
+
+	public void setIntents(Integer intents) {
+		this.intents = intents;
+	}
 
 	public Long getId() {
 		return id;
